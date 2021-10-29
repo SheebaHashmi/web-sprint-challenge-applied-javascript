@@ -27,6 +27,7 @@ const Tabs = (topics) => {
       axios.get("http://localhost:5000/api/articles")
       .then(res => {
         const articles = res.data.articles;
+        
           articles[e.target.innerHTML].forEach(item => console.log(item.headline)) 
       })
       .catch(err => {

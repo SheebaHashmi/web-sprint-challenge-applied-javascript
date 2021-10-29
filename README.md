@@ -73,7 +73,7 @@ Ans: An event listener is a type of function which takes an action as string and
 
 4. Why would we convert a NodeList into an Array?
 
-Ans: A nodlist only mocks an array but is unable to perform any of the array methods. So in order to perform array methods on a nodelist, we convert a nodelist into an array.
+Ans: A nodelist only mocks an array but is unable to perform any of the array methods. So in order to perform array methods on a nodelist, we convert a nodelist into an array.
 
 5. What is a component?
 
