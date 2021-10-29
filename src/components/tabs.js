@@ -22,6 +22,18 @@ const Tabs = (topics) => {
     const tab = document.createElement("div"); 
     tab.classList.add("tab");
     tab.textContent = topic;
+
+    tab.addEventListener('click',e => {
+      axios.get("http://localhost:5000/api/articles")
+      .then(res => {
+        const articles = res.data.articles;
+          articles[e.target.innerHTML].forEach(item => console.log(item.headline)) 
+      })
+      .catch(err => {
+        console.log(err)
+      })
+    })
+
     topicDiv.appendChild(tab);
   });
 
